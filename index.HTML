@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Mukesh Dadwani Sir | Phoenix International School</title>
+
+<style>
+
+/* =========================================
+   IMPORT FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#061109;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+/* =========================================
+   LOADER
+========================================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle at center,#18351b,#020503 70%);
+
+    z-index:99999;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    transition:1s;
+}
+
+.loader-fire{
+    font-size:100px;
+
+    animation:firePulse 1.5s infinite alternate;
+
+    filter:
+    drop-shadow(0 0 15px #ff6600)
+    drop-shadow(0 0 45px orange);
+}
+
+@keyframes firePulse{
+
+    from{
+        transform:scale(.85);
+        opacity:.7;
+    }
+
+    to{
+        transform:scale(1.15);
+        opacity:1;
+    }
+
+}
+
+.loader-text{
+    margin-top:20px;
+
+    font-size:11px;
+    letter-spacing:6px;
+
+    color:#e7c96d;
+}
+
+
+/* =========================================
+   OPENING PAGE
+========================================= */
+
+#opening{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+
+    radial-gradient(
+    circle at 50% 30%,
+    rgba(55,120,60,.25),
+    transparent 45%),
+
+    linear-gradient(
+    135deg,
+    #020604,
+    #0b2512,
+    #020604);
+
+}
+
+.opening-content{
+    max-width:950px;
+    padding:30px;
+}
+
+.school-logo{
+    width:140px;
+    height:140px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(0 0 20px rgba(230,200,100,.35));
+}
+
+.presenting{
+    color:#e7c96d;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    margin-bottom:25px;
+}
+
+.opening-line{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(28px,5vw,58px);
+
+    margin:10px;
+
+    opacity:0;
+
+    animation:fadeUp 1.2s forwards;
+}
+
+.opening-line:nth-of-type(2){
+    animation-delay:.4s;
+}
+
+.opening-line:nth-of-type(3){
+    animation-delay:1s;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.main-birthday{
+
+    margin-top:40px;
+
+    opacity:0;
+
+    animation:fadeUp 1.5s forwards;
+
+    animation-delay:1.8s;
+}
+
+.main-birthday h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(50px,9vw,105px);
+
+    color:#e7c96d;
+}
+
+.main-birthday h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(30px,5vw,55px);
+}
+
+.main-birthday p{
+
+    margin-top:15px;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    color:#d4ddd2;
+}
+
+
+/* BUTTON */
+
+.enter-btn{
+
+    margin-top:35px;
+
+    padding:16px 32px;
+
+    border-radius:40px;
+
+    border:1px solid #e7c96d;
+
+    background:transparent;
+
+    color:#e7c96d;
+
+    cursor:pointer;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    transition:.4s;
+}
+
+.enter-btn:hover{
+
+    background:#e7c96d;
+
+    color:#071109;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 35px rgba(230,200,100,.3);
+}
+
+
+/* =========================================
+   STORY PAGE
+========================================= */
+
+#story-section{
+
+    display:none;
+
+    min-height:100vh;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    to bottom,
+    #061109,
+    #12301a);
+}
+
+.story-container{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.seed{
+
+    font-size:85px;
+
+    animation:seedFloat 3s infinite alternate;
+}
+
+@keyframes seedFloat{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-15px);
+    }
+
+}
+
+.story-container h1{
+
+    margin:25px 0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(45px,7vw,75px);
+
+    color:#e7c96d;
+}
+
+.story-container p{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#d5ded4;
+}
+
+.story-steps{
+
+    margin-top:50px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+}
+
+.story-card{
+
+    width:190px;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #174122,
+    #091b0e);
+
+    border:1px solid rgba(230,200,100,.3);
+
+    transition:.4s;
+}
+
+.story-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#e7c96d;
+}
+
+.story-card span{
+    font-size:45px;
+}
+
+.story-card h3{
+
+    margin-top:15px;
+
+    color:#e7c96d;
+}
+
+
+/* =========================================
+   LEGACY TREE PAGE
+========================================= */
+
+#legacy{
+
+    display:none;
+
+    min-height:100vh;
+
+    padding:40px 10px 60px;
+
+    background:
+
+    radial-gradient(
+    circle at 50% 35%,
+    rgba(50,120,55,.25),
+    transparent 45%),
+
+    linear-gradient(
+    #061109,
+    #0a2411,
+    #061109);
+}
+
+.tree-heading{
+
+    text-align:center;
+}
+
+.tree-heading h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(50px,8vw,90px);
+
+    color:#e7c96d;
+}
+
+.tree-heading p{
+
+    margin-top:10px;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    color:#ccd5c9;
+}
+
+.tree-scene{
+
+    position:relative;
+
+    max-width:1250px;
+
+    height:850px;
+
+    margin:auto;
+
+    overflow:hidden;
+}
+
+
+/* MOON */
+
+.moon{
+
+    position:absolute;
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    right:8%;
+    top:5%;
+
+    background:#fff6cf;
+
+    box-shadow:
+    0 0 35px rgba(255,245,190,.5),
+    0 0 80px rgba(255,245,190,.2);
+}
+
+
+/* TREE */
+
+.tree{
+
+    position:absolute;
+
+    width:650px;
+    height:700px;
+
+    left:50%;
+    bottom:40px;
+
+    transform:translateX(-50%);
+}
+
+.trunk{
+
+    position:absolute;
+
+    width:130px;
+    height:450px;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:70px 70px 15px 15px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #24130c,
+    #57321c,
+    #9b6640,
+    #57321c,
+    #24130c);
+}
+
+.branch{
+
+    position:absolute;
+
+    height:35px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #4b2a18,
+    #75472a);
+
+    transform-origin:left center;
+}
+
+.branch1{
+
+    width:280px;
+
+    left:65px;
+
+    top:150px;
+
+    transform:rotate(-35deg);
+}
+
+.branch2{
+
+    width:250px;
+
+    left:65px;
+
+    top:250px;
+
+    transform:rotate(-55deg);
+}
+
+.branch3{
+
+    width:280px;
+
+    left:65px;
+
+    top:150px;
+
+    transform:rotate(35deg);
+}
+
+.branch4{
+
+    width:250px;
+
+    left:65px;
+
+    top:250px;
+
+    transform:rotate(55deg);
+}
+
+
+/* ROOTS */
+
+.root{
+
+    position:absolute;
+
+    height:30px;
+
+    background:#4b2a18;
+
+    border-radius:50%;
+
+    bottom:-10px;
+}
+
+.root1{
+
+    width:220px;
+
+    left:40px;
+
+    transform:rotate(15deg);
+}
+
+.root2{
+
+    width:220px;
+
+    right:40px;
+
+    transform:rotate(-15deg);
+}
+
+.root3{
+
+    width:250px;
+
+    left:200px;
+
+    bottom:-25px;
+}
+
+
+/* FOLIAGE */
+
+.foliage{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+    circle at 35% 30%,
+    #6ca95a,
+    #347a3e 45%,
+    #1b542c 75%,
+    #103a21);
+
+    box-shadow:
+
+    inset -20px -15px 25px rgba(0,0,0,.25),
+
+    0 15px 30px rgba(0,0,0,.3);
+}
+
+.f1{
+    width:270px;
+    height:210px;
+    top:40px;
+    left:25px;
+}
+
+.f2{
+    width:280px;
+    height:220px;
+    top:20px;
+    right:25px;
+}
+
+.f3{
+    width:300px;
+    height:240px;
+    top:-10px;
+    left:175px;
+}
+
+.f4{
+    width:270px;
+    height:210px;
+    top:180px;
+    left:0;
+}
+
+.f5{
+    width:270px;
+    height:210px;
+    top:190px;
+    right:0;
+}
+
+
+/* FOUNDER PHOTO */
+
+.founder-center{
+
+    position:absolute;
+
+    top:280px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:30;
+
+    text-align:center;
+}
+
+.founder-ring{
+
+    position:absolute;
+
+    width:225px;
+    height:225px;
+
+    left:50%;
+    top:-15px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    border:2px dashed #e7c96d;
+
+    animation:rotateRing 18s linear infinite;
+}
+
+@keyframes rotateRing{
+
+    from{
+        transform:translateX(-50%) rotate(0deg);
+    }
+
+    to{
+        transform:translateX(-50%) rotate(360deg);
+    }
+
+}
+
+.founder-photo{
+
+    width:190px;
+    height:190px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #e7c96d;
+
+    box-shadow:
+
+    0 0 25px #e7c96d,
+
+    0 0 60px rgba(230,200,100,.4);
+}
+
+.founder-center h2{
+
+    margin-top:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#e7c96d;
+}
+
+
+/* =========================================
+   LEAVES
+========================================= */
+
+.leader-leaf{
+
+    position:absolute;
+
+    width:165px;
+
+    min-height:85px;
+
+    padding:12px;
+
+    z-index:60;
+
+    cursor:pointer;
+
+    border:1px solid rgba(230,200,100,.6);
+
+    border-radius:60% 10% 60% 10%;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #55a04d,
+    #1c5d32);
+
+    color:white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.4);
+
+    transition:.4s;
+}
+
+.leader-leaf:hover{
+
+    transform:
+    scale(1.1)
+    rotate(-3deg);
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #d7b755,
+    #806323);
+}
+
+.leader-leaf span{
+
+    display:block;
+
+    font-size:20px;
+}
+
+.leader-leaf strong{
+
+    display:block;
+
+    font-size:10px;
+}
+
+.leader-leaf small{
+
+    font-size:9px;
+}
+
+
+/* LEAF POSITIONS */
+
+.leaf1{
+    top:60px;
+    left:5%;
+}
+
+.leaf2{
+    top:60px;
+    right:5%;
+}
+
+.leaf3{
+    top:260px;
+    left:1%;
+}
+
+.leaf4{
+    top:260px;
+    right:1%;
+}
+
+.leaf5{
+    top:470px;
+    left:8%;
+}
+
+.leaf6{
+    top:470px;
+    right:8%;
+}
+
+.leaf7{
+    top:600px;
+    left:25%;
+}
+
+.leaf8{
+    top:600px;
+    right:25%;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.progress-section{
+
+    text-align:center;
+}
+
+.progress-section p{
+
+    color:#e7c96d;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+.progress-bar{
+
+    width:300px;
+
+    max-width:90%;
+
+    height:7px;
+
+    margin:15px auto;
+
+    background:#17361f;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    background:#e7c96d;
+
+    transition:.7s;
+}
+
+
+/* =========================================
+   VALUES PAGE
+========================================= */
+
+#values{
+
+    display:none;
+
+    min-height:100vh;
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #0b2412,
+    #061009);
+}
+
+#values h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(50px,8vw,85px);
+
+    color:#e7c96d;
+}
+
+.values-subtitle{
+
+    margin:15px;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    color:#ccd5c9;
+}
+
+.values-grid{
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.value-card{
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #183f24,
+    #0a1d10);
+
+    border:1px solid rgba(230,200,100,.35);
+
+    transition:.4s;
+}
+
+.value-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#e7c96d;
+}
+
+.value-card span{
+
+    font-size:50px;
+}
+
+.value-card h2{
+
+    margin:15px;
+
+    color:#e7c96d;
+}
+
+.value-card p{
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:rgba(0,0,0,.88);
+}
+
+.modal-box{
+
+    position:relative;
+
+    width:min(650px,100%);
+
+    padding:45px 35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #173e24,
+    #08170d);
+
+    border:1px solid #e7c96d;
+}
+
+.close{
+
+    position:absolute;
+
+    right:20px;
+
+    top:10px;
+
+    font-size:32px;
+
+    color:#e7c96d;
+
+    cursor:pointer;
+}
+
+.modal-role{
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    color:#e7c96d;
+}
+
+.modal-name{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    margin:10px;
+}
+
+.modal-message{
+
+    white-space:pre-line;
+
+    font-size:14px;
+
+    line-height:1.9;
+}
+
+
+/* =========================================
+   FINAL PAGE
+========================================= */
+
+#final{
+
+    display:none;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(
+    circle at center,
+    rgba(200,165,70,.25),
+    transparent 45%),
+
+    linear-gradient(
+    #0a2110,
+    #020604);
+}
+
+
+/* CONFETTI */
+
+#confetti-container{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:5;
+}
+
+.confetti{
+
+    position:absolute;
+
+    top:-20px;
+
+    width:10px;
+
+    height:18px;
+
+    border-radius:2px;
+
+    animation:confettiFall linear forwards;
+}
+
+@keyframes confettiFall{
+
+    0%{
+
+        transform:
+        translateY(-20px)
+        rotate(0deg);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+
+        opacity:0;
+    }
+
+}
+
+
+/* FLOWING WORDS */
+
+.flow-word{
+
+    position:absolute;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(18px,3vw,38px);
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    color:rgba(231,201,109,.25);
+
+    pointer-events:none;
+
+    white-space:nowrap;
+
+    z-index:1;
+
+    animation:flowWords 12s linear infinite;
+}
+
+@keyframes flowWords{
+
+    0%{
+
+        transform:
+        translateX(-20px)
+        translateY(0);
+
+        opacity:.15;
+    }
+
+    50%{
+        opacity:.5;
+    }
+
+    100%{
+
+        transform:
+        translateX(40px)
+        translateY(-40px);
+
+        opacity:.15;
+    }
+
+}
+
+.flow1{
+    top:8%;
+    left:5%;
+}
+
+.flow2{
+    top:18%;
+    right:5%;
+}
+
+.flow3{
+    top:35%;
+    left:3%;
+}
+
+.flow4{
+    top:50%;
+    right:3%;
+}
+
+.flow5{
+    top:68%;
+    left:5%;
+}
+
+.flow6{
+    top:78%;
+    right:7%;
+}
+
+.flow7{
+    top:88%;
+    left:20%;
+}
+
+.flow8{
+    top:30%;
+    right:15%;
+}
+
+
+/* FINAL CONTENT */
+
+.final-content{
+
+    max-width:900px;
+
+    position:relative;
+
+    z-index:10;
+}
+
+.final-content img{
+
+    width:150px;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #e7c96d;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 0 30px rgba(231,201,109,.5);
+}
+
+.final-content h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(60px,10vw,110px);
+
+    color:#e7c96d;
+}
+
+.final-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(35px,6vw,60px);
+}
+
+.final-message{
+
+    margin-top:35px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    color:#eee7d4;
+}
+
+.final-family{
+
+    margin-top:40px;
+
+    color:#e7c96d;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:750px){
+
+    .tree-scene{
+        height:950px;
+    }
+
+    .tree{
+
+        transform:
+        translateX(-50%)
+        scale(.68);
+
+        transform-origin:
+        bottom center;
+    }
+
+    .leader-leaf{
+
+        width:125px;
+
+        min-height:70px;
+
+        padding:8px;
+    }
+
+    .leaf1{
+        top:20px;
+        left:2%;
+    }
+
+    .leaf2{
+        top:20px;
+        right:2%;
+    }
+
+    .leaf3{
+        top:110px;
+        left:2%;
+    }
+
+    .leaf4{
+        top:110px;
+        right:2%;
+    }
+
+    .leaf5{
+        top:200px;
+        left:2%;
+    }
+
+    .leaf6{
+        top:200px;
+        right:2%;
+    }
+
+    .leaf7{
+        top:290px;
+        left:2%;
+    }
+
+    .leaf8{
+        top:290px;
+        right:2%;
+    }
+
+    .final-message{
+        font-size:21px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     FIRE LOADER
+========================================= -->
+
+<div id="loader">
+
+    <div class="loader-fire">🔥</div>
+
+    <div class="loader-text">
+        IGNITING A LEGACY
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     OPENING
+========================================= -->
+
+<section id="opening">
+
+<div class="opening-content">
+
+<img
+src="phoenix-logo.jpeg"
+class="school-logo"
+alt="Phoenix International School Logo">
+
+
+<div class="presenting">
+
+A SPECIAL BIRTHDAY TRIBUTE
+
+</div>
+
+
+<div class="opening-line">
+
+Every great journey begins with a dream...
+
+</div>
+
+<div class="opening-line">
+
+Every dream begins with a vision...
+
+</div>
+
+<div class="opening-line">
+
+And every vision has the power to change lives.
+
+</div>
+
+
+<div class="main-birthday">
+
+<h1>HAPPY BIRTHDAY</h1>
+
+<h2>Mukesh Dadwani Sir</h2>
+
+<p>
+FOUNDER • TEACHER • MENTOR • VISIONARY
+</p>
+
+
+<button
+class="enter-btn"
+onclick="startJourney()">
+
+ENTER THE LEGACY →
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     STORY
+========================================= -->
+
+<section id="story-section">
+
+<div class="story-container">
+
+<div class="seed">🌱</div>
+
+<h1>From A Vision To A Legacy</h1>
+
+<p>
+
+Every great institution begins with a vision.
+
+A vision that inspires people, creates opportunities and helps young minds discover their true potential.
+
+What started as a dream continues today through every student who learns, grows and believes in a brighter future.
+
+</p>
+
+
+<div class="story-steps">
+
+<div class="story-card">
+<span>💡</span>
+<h3>The Vision</h3>
+</div>
+
+<div class="story-card">
+<span>🏫</span>
+<h3>The School</h3>
+</div>
+
+<div class="story-card">
+<span>👨‍🎓</span>
+<h3>The Students</h3>
+</div>
+
+<div class="story-card">
+<span>🌳</span>
+<h3>The Legacy</h3>
+</div>
+
+</div>
+
+
+<button
+class="enter-btn"
+onclick="showTree()">
+
+DISCOVER THE LEGACY TREE →
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     LEGACY TREE
+========================================= -->
+
+<section id="legacy">
+
+
+<div class="tree-heading">
+
+<h1>The Legacy Tree</h1>
+
+<p>
+ONE VISION • COUNTLESS DREAMS • ONE LEGACY
+</p>
+
+</div>
+
+
+<div class="tree-scene">
+
+
+<div class="moon"></div>
+
+
+<div class="tree">
+
+
+<div class="foliage f1"></div>
+<div class="foliage f2"></div>
+<div class="foliage f3"></div>
+<div class="foliage f4"></div>
+<div class="foliage f5"></div>
+
+
+<div class="trunk">
+
+<div class="branch branch1"></div>
+<div class="branch branch2"></div>
+<div class="branch branch3"></div>
+<div class="branch branch4"></div>
+
+</div>
+
+
+<div class="root root1"></div>
+<div class="root root2"></div>
+<div class="root root3"></div>
+
+
+<div class="founder-center">
+
+<div class="founder-ring"></div>
+
+<img
+src="mukesh-sir.jpeg"
+class="founder-photo"
+alt="Mukesh Dadwani Sir">
+
+<h2>Mukesh Dadwani Sir</h2>
+
+</div>
+
+
+</div>
+
+
+<!-- LEAF 1 -->
+
+<button class="leader-leaf leaf1"
+onclick="showWish('Principal','Darpana Patil',messages.principal)">
+
+<span>⭐</span>
+<strong>PRINCIPAL</strong>
+<small>Darpana Patil</small>
+
+</button>
+
+
+<!-- LEAF 2 -->
+
+<button class="leader-leaf leaf2"
+onclick="showWish('Vice Principal','Vice Principal',messages.vice)">
+
+<span>⭐</span>
+<strong>VICE PRINCIPAL</strong>
+<small>School Leadership</small>
+
+</button>
+
+
+<!-- LEAF 3 -->
+
+<button class="leader-leaf leaf3"
+onclick="showWish('Head Boy','Teerthankar Nihlani',messages.headboy)">
+
+<span>👑</span>
+<strong>HEAD BOY</strong>
+<small>Teerthankar Nihlani</small>
+
+</button>
+
+
+<!-- LEAF 4 -->
+
+<button class="leader-leaf leaf4"
+onclick="showWish('Head Girl','Keya Ravesia',messages.headgirl)">
+
+<span>👑</span>
+<strong>HEAD GIRL</strong>
+<small>Keya Ravesia</small>
+
+</button>
+
+
+<!-- LEAF 5 -->
+
+<button class="leader-leaf leaf5"
+onclick="showWish('Ignis House Captain','Bhavya Ray',messages.ignis)">
+
+<span>🔥</span>
+<strong>IGNIS CAPTAIN</strong>
+<small>Bhavya Ray</small>
+
+</button>
+
+
+<!-- LEAF 6 -->
+
+<button class="leader-leaf leaf6"
+onclick="showWish('Ather House Captain','Ather Captain',messages.ather)">
+
+<span>💧</span>
+<strong>ATHER CAPTAIN</strong>
+<small>House Captain</small>
+
+</button>
+
+
+<!-- LEAF 7 -->
+
+<button class="leader-leaf leaf7"
+onclick="showWish('Aurora House Captain','Aurora Captain',messages.aurora)">
+
+<span>🌅</span>
+<strong>AURORA CAPTAIN</strong>
+<small>House Captain</small>
+
+</button>
+
+
+<!-- LEAF 8 -->
+
+<button class="leader-leaf leaf8"
+onclick="showWish('Terra House Captain','Terra Captain',messages.terra)">
+
+<span>🌍</span>
+<strong>TERRA CAPTAIN</strong>
+<small>House Captain</small>
+
+</button>
+
+
+</div>
+
+
+<!-- PROGRESS -->
+
+<div class="progress-section">
+
+<p id="progressText">
+
+Discover all the wishes hidden in the Legacy Tree
+
+<br><br>
+
+Leadership Wishes:
+<span id="count">0</span> / 8
+
+</p>
+
+
+<div class="progress-bar">
+
+<div
+class="progress-fill"
+id="progressFill">
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     VALUES
+========================================= -->
+
+<section id="values">
+
+<h1>The Phoenix Values</h1>
+
+<p class="values-subtitle">
+
+EVERY BRANCH REPRESENTS A NEW POSSIBILITY
+
+</p>
+
+
+<div class="values-grid">
+
+
+<div class="value-card">
+<span>📚</span>
+<h2>Education</h2>
+<p>Knowledge that builds strong foundations.</p>
+</div>
+
+
+<div class="value-card">
+<span>👑</span>
+<h2>Leadership</h2>
+<p>Building confident future leaders.</p>
+</div>
+
+
+<div class="value-card">
+<span>💪</span>
+<h2>Confidence</h2>
+<p>Believing in ourselves and our abilities.</p>
+</div>
+
+
+<div class="value-card">
+<span>🎯</span>
+<h2>Discipline</h2>
+<p>Learning commitment and responsibility.</p>
+</div>
+
+
+<div class="value-card">
+<span>🏏</span>
+<h2>Sports</h2>
+<p>Teamwork, determination and sportsmanship.</p>
+</div>
+
+
+<div class="value-card">
+<span>💡</span>
+<h2>Skills</h2>
+<p>Discovering talents and hidden potential.</p>
+</div>
+
+
+<div class="value-card">
+<span>🌟</span>
+<h2>Dreams</h2>
+<p>Giving students courage to dream bigger.</p>
+</div>
+
+
+<div class="value-card">
+<span>🚀</span>
+<h2>Future</h2>
+<p>Preparing young minds for tomorrow.</p>
+</div>
+
+
+</div>
+
+
+<button
+class="enter-btn"
+onclick="showFinal()">
+
+A SPECIAL MESSAGE FOR SIR →
+
+</button>
+
+
+</section>
+
+
+
+<!-- =========================================
+     WISH MODAL
+========================================= -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+
+<div
+class="close"
+onclick="closeWish()">
+
+×
+
+</div>
+
+
+<div
+class="modal-role"
+id="modalRole">
+
+</div>
+
+
+<h2
+class="modal-name"
+id="modalName">
+
+</h2>
+
+
+<div
+class="modal-message"
+id="modalMessage">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================
+     FINAL PAGE
+========================================= -->
+
+<section id="final">
+
+
+<!-- CONFETTI -->
+
+<div id="confetti-container"></div>
+
+
+<!-- FLOWING WORDS -->
+
+<div class="flow-word flow1">EDUCATION</div>
+<div class="flow-word flow2">LEADERSHIP</div>
+<div class="flow-word flow3">CONFIDENCE</div>
+<div class="flow-word flow4">DISCIPLINE</div>
+<div class="flow-word flow5">SPORTS</div>
+<div class="flow-word flow6">SKILLS</div>
+<div class="flow-word flow7">DREAMS</div>
+<div class="flow-word flow8">FUTURE</div>
+
+
+<div class="final-content">
+
+
+<img
+src="mukesh-sir.jpeg"
+alt="Mukesh Dadwani Sir">
+
+
+<h1>
+
+HAPPY BIRTHDAY!
+
+</h1>
+
+
+<h2>
+
+Mukesh Dadwani Sir
+
+</h2>
+
+
+<div class="final-message">
+
+You gave us more than education.
+
+<br><br>
+
+You gave us leadership to stand tall.
+
+<br>
+
+Confidence to believe in ourselves.
+
+<br>
+
+Discipline to stay committed.
+
+<br>
+
+Sportsmanship to rise after every challenge.
+
+<br>
+
+Skills to discover our potential.
+
+<br>
+
+Dreams to chase the impossible.
+
+<br>
+
+And a future to look towards with hope.
+
+<br><br>
+
+Every student who walks through Phoenix
+carries a small part of your vision.
+
+</div>
+
+
+<div class="final-family">
+
+WITH RESPECT AND GRATITUDE
+
+<br><br>
+
+FROM THE PHOENIX INTERNATIONAL SCHOOL FAMILY
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<script>
+
+
+/* =========================================
+   LOADER
+========================================= */
+
+window.addEventListener("load",function(){
+
+    setTimeout(function(){
+
+        document.getElementById("loader").style.opacity="0";
+
+        setTimeout(function(){
+
+            document.getElementById("loader").style.display="none";
+
+        },1000);
+
+    },1800);
+
+});
+
+
+/* =========================================
+   PAGE NAVIGATION
+========================================= */
+
+function startJourney(){
+
+    document.getElementById("opening").style.display="none";
+
+    document.getElementById("story-section").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showTree(){
+
+    document.getElementById("story-section").style.display="none";
+
+    document.getElementById("legacy").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showValues(){
+
+    document.getElementById("legacy").style.display="none";
+
+    document.getElementById("values").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showFinal(){
+
+    document.getElementById("values").style.display="none";
+
+    document.getElementById("final").style.display="flex";
+
+    window.scrollTo(0,0);
+
+
+    /* First Confetti Burst */
+
+    setTimeout(function(){
+
+        launchConfetti();
+
+    },500);
+
+
+    /* Second Confetti Burst */
+
+    setTimeout(function(){
+
+        launchConfetti();
+
+    },5000);
+
+}
+
+
+
+/* =========================================
+   CONFETTI
+========================================= */
+
+function launchConfetti(){
+
+    const container =
+    document.getElementById("confetti-container");
+
+
+    const colors = [
+
+        "#e7c96d",
+        "#ffffff",
+        "#d4af37",
+        "#4caf50",
+        "#ffcc00",
+        "#f5e6a8"
+
+    ];
+
+
+    for(let i=0;i<180;i++){
+
+
+        const confetti =
+        document.createElement("div");
+
+
+        confetti.classList.add("confetti");
+
+
+        confetti.style.left =
+        Math.random()*100+"%";
+
+
+        confetti.style.backgroundColor =
+
+        colors[
+            Math.floor(
+                Math.random()*colors.length
+            )
+        ];
+
+
+        confetti.style.width =
+        Math.random()*10+5+"px";
+
+
+        confetti.style.height =
+        Math.random()*15+8+"px";
+
+
+        confetti.style.animationDuration =
+        Math.random()*3+3+"s";
+
+
+        confetti.style.animationDelay =
+        Math.random()*2+"s";
+
+
+        container.appendChild(confetti);
+
+
+        setTimeout(function(){
+
+            confetti.remove();
+
+        },8000);
+
+    }
+
+}
+
+
+/* =========================================
+   WISH MESSAGES
+========================================= */
+
+const messages={
+
+
+principal:
+
+`Dear Mukesh Sir,
+
+On your special day, we celebrate not only your birthday but also your vision and dedication that have helped shape this wonderful institution.
+
+Your commitment towards education continues to inspire students to learn, grow and discover their potential.
+
+Wishing you happiness, good health and continued success.
+
+Happy Birthday, Sir!`,
+
+
+vice:
+
+`Dear Mukesh Sir,
+
+Your dedication towards students and education continues to inspire the entire Phoenix family.
+
+Thank you for creating an environment where young minds are encouraged to learn, lead and believe in themselves.
+
+Wishing you a wonderful birthday filled with happiness and success!`,
+
+
+headboy:
+
+`Respected Mukesh Sir,
+
+As the Head Boy, I feel proud to represent students in a school built upon such a strong vision.
+
+You have given us opportunities to develop confidence, leadership and the courage to dream.
+
+Happy Birthday to our Founder, Teacher and Mentor!`,
+
+
+headgirl:
+
+`Respected Mukesh Sir,
+
+Your vision has created a place where students are encouraged not only to study but also to explore, lead and believe in themselves.
+
+Every opportunity we receive today is part of the strong foundation you helped create.
+
+Happy Birthday, Sir!`,
+
+
+ignis:
+
+`Dear Mukesh Sir,
+
+Ignis represents energy, passion and determination.
+
+These are qualities that your vision inspires in students every day.
+
+Thank you for giving students opportunities to discover their strengths and become confident leaders.
+
+Happy Birthday, Sir!`,
+
+
+ather:
+
+`Respected Mukesh Sir,
+
+Your dedication has helped create an environment where students are encouraged to learn, grow and confidently move towards their goals.
+
+Your vision reminds us that every student has potential waiting to be discovered.
+
+Happy Birthday, Sir!`,
+
+
+aurora:
+
+`Dear Mukesh Sir,
+
+Aurora represents a new beginning and the light of a new day.
+
+Your vision has brought new opportunities and possibilities into the lives of students.
+
+Thank you for encouraging us to look towards the future with confidence and courage.
+
+Happy Birthday, Sir!`,
+
+
+terra:
+
+`Respected Mukesh Sir,
+
+Every strong structure needs a strong foundation.
+
+Your vision and dedication have provided that foundation for the Phoenix family.
+
+Thank you for planting a vision that continues to grow through every student.
+
+Happy Birthday, Sir!`
+
+};
+
+
+
+/* =========================================
+   WISH SYSTEM
+========================================= */
+
+let openedWishes = new Set();
+
+let allWishesComplete = false;
+
+let completionShown = false;
+
+
+function showWish(role,name,message){
+
+
+    document.getElementById("modalRole").innerText = role;
+
+    document.getElementById("modalName").innerText = name;
+
+    document.getElementById("modalMessage").innerText = message;
+
+
+    document.getElementById("modal").style.display = "flex";
+
+
+    openedWishes.add(role);
+
+
+    updateProgress();
+
+}
+
+
+
+/* CLOSE WISH */
+
+function closeWish(){
+
+
+    document.getElementById("modal").style.display = "none";
+
+
+    /* After all 8 wishes */
+
+    if(allWishesComplete && !completionShown){
+
+
+        completionShown = true;
+
+
+        setTimeout(function(){
+
+            showCompletionMessage();
+
+        },500);
+
+    }
+
+}
+
+
+
+/* UPDATE PROGRESS */
+
+function updateProgress(){
+
+
+    let number = openedWishes.size;
+
+
+    document.getElementById("count").innerText = number;
+
+
+    let percentage = (number/8)*100;
+
+
+    document.getElementById("progressFill").style.width =
+
+    percentage+"%";
+
+
+    if(number === 8){
+
+
+        allWishesComplete = true;
+
+
+        document.getElementById("progressText").innerHTML =
+
+        `🌟 ALL WISHES HAVE BLOOMED 🌟
+
+        <br><br>
+
+        The Legacy Tree is Complete`;
+
+    }
+
+}
+
+
+
+/* =========================================
+   TREE COMPLETION
+========================================= */
+
+function showCompletionMessage(){
+
+
+    document.getElementById("modalRole").innerText =
+
+    "THE LEGACY TREE";
+
+
+    document.getElementById("modalName").innerText =
+
+    "A Complete Legacy";
+
+
+    document.getElementById("modalMessage").innerText =
+
+`Every leaf carries a message.
+
+Every message carries gratitude.
+
+Together, they create a legacy.
+
+Thank you, Mukesh Dadwani Sir,
+for planting a vision that continues
+to grow through every student.
+
+The Phoenix Legacy continues. 🌳✨`;
+
+
+    document.getElementById("modal").style.display = "flex";
+
+
+    setTimeout(function(){
+
+
+        document.getElementById("modal").style.display = "none";
+
+
+        showValues();
+
+
+    },7000);
+
+}
+
+
+</script>
+
+
+</body>
+</html>
